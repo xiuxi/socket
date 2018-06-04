@@ -5,6 +5,10 @@ Source Database: wordpress
 Date: 2018/6/4 09:49:20
 */
 
+create database wordpress;
+use wordpress;
+
+
 SET FOREIGN_KEY_CHECKS=0;
 
 -- ----------------------------
