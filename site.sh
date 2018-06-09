@@ -15,3 +15,5 @@ curl https://raw.githubusercontent.com/xiuxi/socket/master/wp-config.php --outpu
 curl https://raw.githubusercontent.com/xiuxi/socket/master/wordpress.sql --output wordpress.sql
 
 mysql -h localhost -u root wordpress < /var/www/html/wordpress.sql
+
+sudo setenforce 0 #disable SELinux
