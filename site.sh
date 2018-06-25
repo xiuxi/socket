@@ -17,3 +17,6 @@ curl https://raw.githubusercontent.com/xiuxi/socket/master/wordpress.sql --outpu
 mysql -h localhost -u root wordpress < /var/www/html/wordpress.sql
 
 sudo setenforce 0 #disable SELinux
+
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'root' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
